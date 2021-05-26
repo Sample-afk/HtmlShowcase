@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Game</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    
+    <body>
+        <div class="Ui">
+            <button class="myButton" onclick="location.href = 'index.html'">back</button>
+            <button class="myButton" onclick="start()" id="startB">Start</button>
+            <button class="clearButton" onclick="clearScr()">Clear</button>
+            <p class="inputLabel">Size (2/4/6) = </p>
+            <input type="text" id="input" class="input" value="2">
+<!--            <p class="inputLabel"> Name(optional): </p>
+            <input type="text" id="input" class="input" placeholder="Name">-->
+            <br>
+            <div class="info" > 
+                <p>(The clock will start as soon as you open your first tile.
+                As well as the start button is disabled while in game.
+                Check out the 
+                <a href="http://sample0text.pythonanywhere.com/game">Game</a>
+                with scoreboard.)</p>
+            </div>
+            <div class="error" id="error"> 
+            </div>
+        </div>
+        
+<!--place for field and results-->
+        <div class="row">
+            <div class="col">
+                <div class="field" id="field">
+                </div>
+                <div class="result" id="result">
+                </div>
+                <div class="timer" id="timer">00:00
+                </div>
+            </div>
+            <div class="col">
+                <img class="img0" id="jokeImage">
+                <div class="result" id="joke">
+                    <!--hey-->
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/game.js"></script>
+    </body>
+</html>
