@@ -28,7 +28,8 @@ var used = [];
 
 
 function clearScr() {
-    document.getElementById("field").innerHTML = '';
+    //toggleStart(false);
+    document.getElementById("field").innerHTML = '""';
     InGame = false;
     secondClick = false;
     clockRunning = false;
@@ -42,6 +43,7 @@ function clearScr() {
     document.getElementById("jokeImage").src = "";
     document.getElementById("jokeImage").width = "";
     document.getElementById("jokeImage").height = "";
+    document.getElementById("startB").disabled = false;
     pressed = 0;
 }
 
@@ -141,12 +143,12 @@ console.log(" first choise color" + colors[r]);
     function toggleStart(key) {//true - enable; false - disable
         if (key){
 //            document.getElementById("startB").className = "disButton";
-//            document.getElementById("startB").style.background = "#89ff5e";
+//            document.getElementById("startB").style.backgroundColor = "#89ff5e";
 //            document.getElementById("startB").style.cursor = "pointer";
             document.getElementById("startB").disabled = false;
         } else {
 //            document.getElementById("startB").className = "myButton";
-//            document.getElementById("startB").style.background = "#89ff5e";
+//            document.getElementById("startB").style.backgroundColor = "#89ff5e";
 //            document.getElementById("startB").style.cursor = "default";
             document.getElementById("startB").disabled = true;
         }
