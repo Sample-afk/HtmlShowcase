@@ -231,7 +231,7 @@ console.log(" first choise color" + colors[r]);
 //            check for end
             if (answCount == n*n/2){
                 fetchJoke();
-                document.getElementById("result").textContent = "You won. Your time:";
+                document.getElementById("result").textContent = "You won!";
                 InGame = false;
                 toggleStart(true);
                 clearInterval(clock);
