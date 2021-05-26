@@ -34,7 +34,7 @@ p {font-size: 16px;}
   /*clean image*/
   .img0 {
     max-width: 350px;
-    max-height: 600px;
+    max-height: 550px;
     margin-top: 50px;
     border-radius: 20px;
   }
@@ -50,8 +50,8 @@ p {font-size: 16px;}
   
   /*animated image*/
   .img2 {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 350px;
+    max-height: 350px;
     margin-top: 60px;
     margin-bottom: 70px;
     border-radius: 20px;
@@ -70,6 +70,7 @@ p {font-size: 16px;}
   }
   
   .row {
+    text-align: center;
     margin-top: 25px;
   }
   
