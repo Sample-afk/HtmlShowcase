@@ -75,18 +75,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Theme Simply Me</title>
+  <title>ervin web showcase</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" 
+        rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-default" id="navbar">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" 
+                  data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="">By me (ervin)</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#1">&lt;div&gt;</a></li>
+                <li><a href="#2">&lt;span&gt;</a></li>
+                <li><a href="#3">'&lt;'&'&gt;'</a></li>
+                <li><button class="myButton" onclick="location.href = 'field.html'">Field</button></li>
+                <li><button class="myButton" onclick="location.href = 'game.html'">Game</button></li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+        
+<!--1st container-->
+        <div class="container-fluid bg-1 text-center " id="1">
+            <h3>&lt;div&gt;</h3>
+            <img src="images/div_img1.jpg" class="img-responsive img-circle" 
+                style="display:inline" alt="images/div_img1.png" width="400" height="400">
+            <h3>I'm a 'div' tag</h3>
+                <p>I define a division or a section in an HTML document.</p>
+                <p>So basically I'm a container for HTML elements.</p>
+                <p>My clothes are CSS and my manager is JavaScript.</p>
+                <p>I'm easily styled by using the class or id attribute.</p>
+                <p>And I'm not picky. Any sort of content can be put inside of me!</p>
+        </div>
 
-<h3>Who Am I?</h3>
-<img src="bird.jpg" alt="Bird">
-<h3>I'm an adventurer</h3>
+<!--2nd container-->
+        <div class="container-fluid bg-2 text-center" id="2">
+            <h3>&lt;span&gt;</h3>
+            <p>I'm the 'span' tag.</p>
+            <a href="#" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-search"></span> Search
+            </a>
+            <p></p>
+            <p>I'm an inline container used to mark up a part of a text, or a part of a document.</p>
+            <p>I'm easily styled by CSS or manipulated with JavaScript using the class or id attribute.</p>
+            <p>To be honest I'm much like the div element, only pickier.</p> 
+            <p>Div is a block-level element and I'm an inline element.</p>
+        </div>
 
-</body>
+<!--3rd container-->
+        <div class="container-fluid bg-3 text-center" id="3">
+            <h3>Meet the '&lt;' and '&gt;'</h3>
+            <p>You can see that HTML contains pieces enclosed in angle brackets (' < ' and ' > '),
+                which are also known as the less-than and greater-than symbols. 
+                Both of these angle-bracket-enclosed pieces, called a tag,
+                does not appear to the user, but rather gives information about the page's structure.</p>
+            <p>So you can say, we are builders and support beams ;)
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Applied gray filter, as well as blur</h3>
+                    <div>
+                        <img src="images/img1.jpg" class="img0" 
+                            style="width:100%" alt="images/img1.jpg not found">
+                        <p>original</p>
+                    </div>
+                    <div>
+                        <img src="images/img1.jpg" class="img1" 
+                            style="width:100%" alt="images/img1.jpg not found">
+                        <p>new</p>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <h3>Image animation with keyframes</h3>
+                    <img src="images/img2.jpg" class="img2" 
+                        style="width:100%" alt="images/img2.jpg not found">
+                </div>
+
+                <div class="col">
+                    <h3>Tooltip or popup only on image</h3>
+                    <div class="PopUp">
+                        <img src="images/img3.jpg" class="img0" 
+                            style="width:100%" alt="images/img3.jpg not found">
+                        <span class="popuptext"> Labdien, skolotāj </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script>
+        window.onscroll = function() {stick()};
+  
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function stick() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    </script>
+    
+    </body>
 </html>
